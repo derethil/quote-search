@@ -1,0 +1,73 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+
+  color: #424e4a;
+  padding: 0.25rem 1rem;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 25vh;
+
+  max-width: 720px;
+  width: 100%;
+}
+
+#wrapper form {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#wrapper.top {
+  margin-top: 0vh;
+}
+
+#wrapper > label {
+  font-size: 0.75rem;
+}
+
+#search-container {
+  border-radius: 10px;
+  position: relative;
+}
+
+#search-container > svg {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  bottom: 10px;
+  width: 22px;
+  background: url("../assets/magnifying-glass-solid.svg");
+  overflow: hidden;
+}
+
+#search-container input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 10px 5px 10px 40px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  border: 2px solid #424e4a;
+  font-size: 1.25rem;
+
+  background-color: #fff7f3;
+  color: #424e4a;
+}
+
+#search-container input:focus {
+  outline: none;
+}
+
+#search-container #search-error {
+  padding-top: 10px;
+  padding-left: 5px;
+  margin: 0px;
+  text-align: start;
+
+  color: #ce323a;
+}
